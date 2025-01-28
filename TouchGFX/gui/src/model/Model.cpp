@@ -21,4 +21,6 @@ void Model::tick()
 	osMessageQueueGet(sensor_queueHandle, &raw_temp, &prio, 0);
 
 	temp = (float)raw_temp / 16.0f;
+
+	modelListener->show_temp(temp);
 }

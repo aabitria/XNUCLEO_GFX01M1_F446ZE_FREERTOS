@@ -16,3 +16,8 @@ void Screen1Presenter::deactivate()
 {
 
 }
+
+void Screen1Presenter::show_temp(float temp)
+{
+	view.display_temp(temp);
+}

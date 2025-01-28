@@ -27,6 +27,7 @@ public:
 
     virtual ~Screen1Presenter() {}
 
+    virtual void show_temp(float temp);  // to be implemented in presenter cpp file
 private:
     Screen1Presenter();
 

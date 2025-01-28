@@ -15,11 +15,11 @@ Screen1ViewBase::Screen1ViewBase()
     add(__background);
 
     box1.setPosition(0, 0, 320, 240);
-    box1.setColor(touchgfx::Color::getColorFromRGB(245, 162, 177));
+    box1.setColor(touchgfx::Color::getColorFromRGB(204, 219, 240));
     add(box1);
 
     box2.setPosition(0, 0, 320, 36);
-    box2.setColor(touchgfx::Color::getColorFromRGB(250, 5, 5));
+    box2.setColor(touchgfx::Color::getColorFromRGB(7, 80, 250));
     add(box2);
 
     textArea1.setXY(32, 6);
@@ -42,7 +42,7 @@ Screen1ViewBase::Screen1ViewBase()
     circle2.setRadius(65);
     circle2.setLineWidth(0);
     circle2.setArc(0, 360);
-    circle2Painter.setColor(touchgfx::Color::getColorFromRGB(245, 162, 177));
+    circle2Painter.setColor(touchgfx::Color::getColorFromRGB(204, 219, 240));
     circle2.setPainter(circle2Painter);
     add(circle2);
 

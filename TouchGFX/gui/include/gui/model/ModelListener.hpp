@@ -14,6 +14,8 @@ public:
     {
         model = m;
     }
+
+    virtual void show_temp(float temp) {};  // to be implemented in derived class presenter
 protected:
     Model* model;
 };

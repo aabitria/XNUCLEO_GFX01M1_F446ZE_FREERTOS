@@ -11,9 +11,9 @@
             "Width": 320,
             "Height": 240,
             "Color": {
-              "Red": 245,
-              "Green": 162,
-              "Blue": 177
+              "Red": 204,
+              "Green": 219,
+              "Blue": 240
             }
           },
           {
@@ -22,9 +22,9 @@
             "Width": 320,
             "Height": 36,
             "Color": {
-              "Red": 250,
-              "Green": 5,
-              "Blue": 5
+              "Red": 7,
+              "Green": 80,
+              "Blue": 250
             }
           },
           {
@@ -65,9 +65,9 @@
             "Width": 130,
             "Height": 130,
             "Color": {
-              "Red": 245,
-              "Green": 162,
-              "Blue": 177
+              "Red": 204,
+              "Green": 219,
+              "Blue": 240
             },
             "CenterX": 65.0,
             "CenterY": 65.0,
