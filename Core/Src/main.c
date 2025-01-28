@@ -108,7 +108,7 @@ int main(void)
   MX_TouchGFX_PreOSInit();
   /* USER CODE BEGIN 2 */
 
-  //DS18B20_Init();
+  DS18B20_Init();
 //  gfx01m1_lcd_init();
   /* USER CODE END 2 */
 

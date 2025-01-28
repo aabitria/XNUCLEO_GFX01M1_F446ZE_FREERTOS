@@ -151,51 +151,51 @@ void start_sensor_task(void *argument)
 //		  osMessageQueuePut(sensor_queueHandle, &raw_temp, 1, 0);
 //	  }
 
-//	  DS18B20_Generate_Reset();
-//	  //xTaskNotifyWait(0, 0xFFFFFFFF, &ulNotifValue, portMAX_DELAY);
-//	  DS18B20_Idle();
-//	  if (DS18B20_Get_Presence() <= 510)
-//	  {
-//          while(1);
-//	  }
-//	  vTaskDelay(pdMS_TO_TICKS(2));
-//
-//	  DS18B20_Send_Cmd_SkipRom();
-//	  xTaskNotifyWait(0, 0xFFFFFFFF, &ulNotifValue, portMAX_DELAY);
-//	  DS18B20_Idle();
-//	  vTaskDelay(pdMS_TO_TICKS(2));
-//
-//	  DS18B20_Send_Cmd_ConverT();
-//	  xTaskNotifyWait(0, 0xFFFFFFFF, &ulNotifValue, portMAX_DELAY);
-//	  DS18B20_Idle();
-//	  vTaskDelay(pdMS_TO_TICKS(2));
-//
-//	  DS18B20_Generate_Reset();
-//	  //xTaskNotifyWait(0, 0xFFFFFFFF, &ulNotifValue, portMAX_DELAY);
-//	  DS18B20_Idle();
-//	  if (DS18B20_Get_Presence() <= 510)
-//	  {
-//          while(1);
-//	  }
-//	  vTaskDelay(pdMS_TO_TICKS(2));
-//
-//	  DS18B20_Send_Cmd_SkipRom();
-//	  xTaskNotifyWait(0, 0xFFFFFFFF, &ulNotifValue, portMAX_DELAY);
-//	  DS18B20_Idle();
-//	  vTaskDelay(pdMS_TO_TICKS(2));
-//
-//	  DS18B20_Send_Cmd_RdScr();
-//	  xTaskNotifyWait(0, 0xFFFFFFFF, &ulNotifValue, portMAX_DELAY);
-//	  DS18B20_Idle();
-//	  vTaskDelay(pdMS_TO_TICKS(2));
-//
-//	  DS18B20_Read();
-//	  xTaskNotifyWait(0, 0xFFFFFFFF, &ulNotifValue, portMAX_DELAY);
-//	  DS18B20_Idle();
-//
-//	  DS18B20_Update_Data();
-//	  Raw_Temp = DS18B20_Get_Temp();
-//	  osMessageQueuePut(sensor_queueHandle, &Raw_Temp, 1, 0);
+	  DS18B20_Generate_Reset();
+	  //xTaskNotifyWait(0, 0xFFFFFFFF, &ulNotifValue, portMAX_DELAY);
+	  DS18B20_Idle();
+	  if (DS18B20_Get_Presence() <= 510)
+	  {
+          while(1);
+	  }
+	  vTaskDelay(pdMS_TO_TICKS(2));
+
+	  DS18B20_Send_Cmd_SkipRom();
+	  xTaskNotifyWait(0, 0xFFFFFFFF, &ulNotifValue, portMAX_DELAY);
+	  DS18B20_Idle();
+	  vTaskDelay(pdMS_TO_TICKS(2));
+
+	  DS18B20_Send_Cmd_ConverT();
+	  xTaskNotifyWait(0, 0xFFFFFFFF, &ulNotifValue, portMAX_DELAY);
+	  DS18B20_Idle();
+	  vTaskDelay(pdMS_TO_TICKS(2));
+
+	  DS18B20_Generate_Reset();
+	  //xTaskNotifyWait(0, 0xFFFFFFFF, &ulNotifValue, portMAX_DELAY);
+	  DS18B20_Idle();
+	  if (DS18B20_Get_Presence() <= 510)
+	  {
+          while(1);
+	  }
+	  vTaskDelay(pdMS_TO_TICKS(2));
+
+	  DS18B20_Send_Cmd_SkipRom();
+	  xTaskNotifyWait(0, 0xFFFFFFFF, &ulNotifValue, portMAX_DELAY);
+	  DS18B20_Idle();
+	  vTaskDelay(pdMS_TO_TICKS(2));
+
+	  DS18B20_Send_Cmd_RdScr();
+	  xTaskNotifyWait(0, 0xFFFFFFFF, &ulNotifValue, portMAX_DELAY);
+	  DS18B20_Idle();
+	  vTaskDelay(pdMS_TO_TICKS(2));
+
+	  DS18B20_Read();
+	  xTaskNotifyWait(0, 0xFFFFFFFF, &ulNotifValue, portMAX_DELAY);
+	  DS18B20_Idle();
+
+	  DS18B20_Update_Data();
+	  Raw_Temp = DS18B20_Get_Temp();
+	  osMessageQueuePut(sensor_queueHandle, &Raw_Temp, 1, 0);
 	  vTaskDelay(pdMS_TO_TICKS(300));
   }
   /* USER CODE END start_sensor_task */
